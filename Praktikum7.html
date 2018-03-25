@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Praktikum 7 : Callback Function</title>
+        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="asset/css/style1.css">
+    </head>
+    <body>
+        <h1>Callback Function pada Jquery</h1>
+        <button id="tombol">KLIK</button>
+        <div class="box"></div>
+        <div class="kotak_biru">Function Callback dijalankan</div>
+    </body>
+    <script type="text/Javascript">
+        $(document).ready(function (){
+            $('#tombol').click(function(){
+                $('.box').fadeIn(800,function(){
+                    $('.kotak_biru').show();
+                });                
+            });
+        });
+    </script>
+</html>

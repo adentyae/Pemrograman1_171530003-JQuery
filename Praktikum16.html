@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Praktikum 16 : Menambah Element dengan Jquery</title>
+        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="asset/css/style1.css">
+    </head>
+    <body>
+        <h1>Add Function Jquery</h1>
+        <div class="kotak">
+            <span>ISI KOTAK</span>
+        </div>
+        <button class="after">Tes After</button>
+        <button class="before">Tes Before</button>
+        <button class="append">Tes Append</button>
+        <button class="prepend">Tes Prepend</button>
+    </body>
+    <script type="text/Javascript">
+        $(document).ready(function(){
+            $('.after').click(function(){
+                $('.kotak').after("<h4>Contoh after</h4>");
+            });
+            $('.before').click(function(){
+                $('.kotak').before("<h4>Contoh beforer</h4>");
+            });
+            $('.append').click(function(){
+                $('.kotak').append("<h4>Contoh append</h4>");
+            });
+            $('.prepend').click(function(){
+                $('.kotak').prepend("<h4>Contoh prepend</h4>");
+            });
+        });
+    </script>
+</html>

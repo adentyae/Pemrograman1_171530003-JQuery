@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Praktikum 15 : Set Value val()</title>
+        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="asset/css/style1.css">
+    </head>
+    <body>
+        <h1>Set Function JQuery | val()</h1>
+        <button id="tombol">KLIK</button>
+        <input type="text" name="nama" class="nama">
+        <p class="nama"></p>
+    </body>
+    <script type="text/Javascript">
+        $(document).ready(function(){
+            $('#tombol').click(function(){
+                $('.nama').val("Contoh Set Value Menggunakan val()");
+            });
+        });
+    </script>
+</html>
