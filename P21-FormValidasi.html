@@ -12,7 +12,7 @@
                 <input type="text" id="nama" placeholder="Maukan nama anda...">
                 <span class="pesan pesan-nama">Anda harus mengisi nama!</span><br><br>
                 <input type="text" id="angka" name="notelp" placeholder="No. Telepo anda..">
-                <span class="pesan pesan angka">No. Telepon harus diisi dengan angka</span><br><br>
+                <span class="pesan pesan-angka">No. Telepon harus diisi dengan angka</span><br><br>
                 <input type="submit" value="simpan">
             </form>
         </div>
@@ -27,7 +27,7 @@
             $('.form').submit(function () {
                 var nama = $('#nama').val().length;
                 if (nama==0) {
-                    $(.pesan-nama).css('display','block');
+                    $('.pesan-nama').css('display','block');
                     return false;
                 }
             });
